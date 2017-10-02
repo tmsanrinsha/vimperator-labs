@@ -245,4 +245,111 @@
     }
 }
 
+@-moz-document url-prefix(chrome://liberator/){
+    [liberator|highlight~=Bell] { border: none!important; background-color: black!important; }
+    [liberator|highlight~=Boolean] { color: red!important; }
+    [liberator|highlight~=CmdLine] { color: #D0CFD0!important; background: #333333!important; }
+    [liberator|highlight~=CmdLine]>* { font-family: monospace!important; }
+    [liberator|highlight~=CmdOutput] { white-space: pre!important; }
+    [liberator|highlight~=CompDesc] { color: #999999!important; width: 500px!important; max-width: 500px!important; }
+    [liberator|highlight~=CompGroup] { color: #D0CFD0!important; background: transparent!important; }
+    [liberator|highlight~=CompGroup]:not(:first-of-type) { margin-top: 1ex!important; }
+    [liberator|highlight~=CompIcon] { background: #F8F8F8!important; width: 16px!important; min-width: 16px!important; display: inline-block!important; margin-right: .5ex!important; }
+    [liberator|highlight~=CompIcon]>img { max-width: 16px!important; max-height: 16px!important; vertical-align: middle!important; }
+    [liberator|highlight~=CompItem] { color: #D0CFD0!important; background: transparent!important; }
+    [liberator|highlight~=CompItem]>* { height: 18px!important; min-height: 18px!important; padding: 0 0.5ex!important; }
+    [liberator|highlight~=CompItem][selected] { color: #D0CFD0!important; background: #666666!important; }
+    [liberator|highlight~=CompItem][selected]>* { color: #FFFFFF!important; }
+    [liberator|highlight~=CompMsg] { color: #D0CFD0!important; margin-left: 16px!important; }
+    [liberator|highlight~=CompResult] { width: 500px!important; max-width: 500px!important; overflow: hidden!important; }
+    [liberator|highlight~=CompTitle] { background: rgba(230, 230, 230, 0.1)!important; font-weight: bold!important; }
+    [liberator|highlight~=CompTitle]>* { color: #FD971F!important; border-top: 1px solid black!important; border-bottom: 1px solid black!important; padding: 1px 0.5ex!important; }
+    [liberator|highlight~=ContentSeparator] { border-top: 1px solid #262426!important; display: -moz-box!important; }
+    [liberator|highlight~=Disabled] { color: red!important; }
+    [liberator|highlight~=Enabled] { color: green!important; }
+    [liberator|highlight~=ErrorMsg] { color: #F92672!important; }
+    [liberator|highlight~=Filter] { color: #29B0FA!important; }
+    [liberator|highlight~=Function] { color: navy!important; }
+    [liberator|highlight~=HelpArg] { color: #6A97D4!important; }
+    [liberator|highlight~=HelpBody] { display: block!important; margin: 1em auto!important; max-width: 100ex!important; }
+    [liberator|highlight~=HelpCode] { display: block!important; white-space: pre!important; margin-left: 2em!important; font-family: Terminus, Fixed, monospace!important; }
+    [liberator|highlight~=HelpDefault] { margin-right: 1ex!important; white-space: pre!important; }
+    [liberator|highlight~=HelpDescription] { display: block!important; }
+    [liberator|highlight~=HelpEx] { display: inline-block!important; color: #527BBD!important; font-weight: bold!important; }
+    [liberator|highlight~=HelpExample] { display: block!important; margin: 1em 0!important; }
+    [liberator|highlight~=HelpExample]::before { content: "Example: "!important; font-weight: bold!important; }
+    [liberator|highlight~=HelpInfoLabel] { display: inline-block!important; width: 6em!important;  color: magenta!important; font-weight: bold!important; vertical-align: text-top!important; }
+    [liberator|highlight~=HelpInfoValue] { display: inline-block!important; width: 14em!important; text-decoration: none!important;             vertical-align: text-top!important; }
+    [liberator|highlight~=HelpInfo] { display: block!important; width: 20em!important; margin-left: auto!important; }
+    [liberator|highlight~=HelpItem] { display: block!important; margin: 1em 1em 1em 10em!important; clear: both!important; }
+    [liberator|highlight~=HelpKey] { color: #102663!important; }
+    [liberator|highlight~=HelpNote] { color: red!important; font-weight: bold!important; }
+    [liberator|highlight~=HelpOptInfo] { display: inline-block!important; margin-bottom: 1ex!important; }
+    [liberator|highlight~=HelpOpt] { color: #106326!important; }
+    [liberator|highlight~=HelpOptionalArg] { color: #6A97D4!important; }
+    [liberator|highlight~=HelpSpec] { display: block!important; margin-left: -10em!important; float: left!important; clear: left!important; color: #FF00FF!important; }
+    [liberator|highlight~=HelpString] { display: inline-block!important; color: green!important; font-weight: normal!important; vertical-align: text-top!important; }
+    [liberator|highlight~=HelpString]::after { content: '"'!important; }
+    [liberator|highlight~=HelpString]::before { content: '"'!important; }
+    [liberator|highlight~=HelpTOC]>ol ol { margin-left: -1em!important; }
+    [liberator|highlight~=HelpTag] { display: inline-block!important; color: #999!important; margin-left: 1ex!important; font-size: 8pt!important; font-weight: bold!important; }
+    [liberator|highlight~=HelpTags] { display: block!important; float: right!important; clear: right!important; }
+    [liberator|highlight~=HelpTopic] { color: #102663!important; }
+    [liberator|highlight~=HelpType] { margin-right: 2ex!important; }
+    [liberator|highlight~=HelpWarning] { color: red!important; font-weight: bold!important; }
+    [liberator|highlight~=Help] { font-size: 8pt!important; line-height: 1.4em!important; font-family: -moz-fixed!important; }
+    [liberator|highlight~=Indicator] { color: #D7005F!important; }
+    [liberator|highlight~=InfoMsg] { color: #D0CFD0!important; }
+    [liberator|highlight~=Key] { font-weight: bold!important; }
+    [liberator|highlight~=Keyword] { color: #F92672!important; }
+    [liberator|highlight~=LineNr] { color: orange!important; background: white!important; }
+    [liberator|highlight~=Mapping] { color: magenta!important; }
+    [liberator|highlight~=Message] { white-space: normal!important; min-width: 100%!important; padding-left: 2em!important; text-indent: -2em!important; display: block!important; }
+    [liberator|highlight~=ModeMsg] { color: white!important;   background: #3B8ED1!important; border-radius: 1px!important; padding: 0px 5px!important; }
+    [liberator|highlight~=MoreMsg] { color: #87FF00!important; background: #121112!important; }
+    [liberator|highlight~=NonText] { color: #B973FF!important; min-height: 16px!important; padding-left: 2px!important; }
+    [liberator|highlight~=Normal] { color: #D0CFD0!important; background: rgba(0, 0, 0, 0.7)!important; font-size: 9pt!important; font-family: Consolas, Monaco, monospace!important; }
+    [liberator|highlight~=Null] { color: #005F87!important; }
+    [liberator|highlight~=Number] { color: #005F87!important; }
+    [liberator|highlight~=Object] { color: maroon!important; }
+    [liberator|highlight~=Preview] { color: gray!important; }
+    [liberator|highlight~=PromptText] { color: white!important;   background: rgba(51,51,51,0.6)!important; }
+    [liberator|highlight~=Prompt] { background: url("chrome://liberator/skin/prompt.png")!important; width: 10px!important; background-position: center!important; background-repeat: no-repeat!important; }
+    [liberator|highlight~=Question] { color: green!important; background: white!important; font-weight: bold!important; }
+    [liberator|highlight~=StatusLine] { color: #D0CFD0!important; background: #333333!important; }
+    [liberator|highlight~=String] { color: green!important; }
+    [liberator|highlight~=TabNumber] { font-weight: bold!important; margin: 0px!important; padding-right: .3ex!important; }
+    [liberator|highlight~=Tag] { color: #005F87!important; }
+    [liberator|highlight~=Title] { color: #FF005F!important; font-weight: bold!important; }
+    [liberator|highlight~=URL] { color: #87FF00!important; text-decoration:  none!important; }
+    [liberator|highlight~=URL]:hover { text-decoration: underline!important; cursor: pointer!important; }
+    [liberator|highlight~=WarningMsg] { color: red!important; background: white!important; }
+    [liberator|highlight~=WarningMsg] { color: #E6DB74!important; }
+
+    * { border-color: silver!important; border-width: 0px!important; border-style: solid!important; }
+    html|a { text-decoration: none!important; }
+    html|a[href]:hover { text-decoration: underline!important; }
+    html|column { display: table-column!important; }
+    html|column:first-child { width: 25%!important; }
+    html|dd { display: table-cell!important; padding: .1ex 1ex!important; border-width: 0px!important; }
+    html|dl { display: table!important; width: 100%!important; margin: 1em 0!important; border-bottom-width: 1px!important; border-top-width: 1px!important; padding: .5ex 0!important; table-layout: fixed!important; }
+    html|dl>html|tr { display: table-row!important; }
+    html|dt { display: table-cell!important; padding: .1ex 1ex!important; font-weight: bold!important; }
+    html|em { font-weight: bold!important; font-style: normal!important; }
+    html|h1 { display: block!important; margin: 1em 0!important; padding-bottom: .2ex!important; border-bottom-width: 1px!important; font-size: 2em!important; font-weight: bold!important; color: #527BBD!important; clear: both!important; }
+    html|h2 { display: block!important; margin: 1em 0!important; padding-bottom: .2ex!important; border-bottom-width: 1px!important; font-size: 1.2em!important; font-weight: bold!important; color: #527BBD!important; clear: both!important; }
+    html|h3 { display: block!important; margin: 1em 0!important; padding-bottom: .2ex!important; font-size: 1.1em!important; font-weight: bold!important; color: #527BBD!important; clear: both!important; }
+    html|li { display: list-item!important; }
+    html|ol { display: block!important; list-style: outside decimal!important; }
+    html|p { display: block!important; margin: 1em 0em!important; }
+    html|p:first-child { margin-top: 0!important; }
+    html|ul { display: block!important; list-style: outside disc!important; }
+}
+
+[liberator|highlight~=HintActive] { background: #FD971F!important; }
+[liberator|highlight~=HintElem] { background: #B2D7FF!important; }
+[liberator|highlight~=HintImage] { opacity: .5!important; }
+[liberator|highlight~=Hint] { font-family: Monaco, Consolas!important; font-size: 13px!important; font-weight: bold!important; color: white!important; background: #F92672!important; border-color: ButtonShadow!important; border-width: 0px!important; border-style: solid!important; padding: 0px 1px 0px 1px!important; }
+[liberator|highlight~=Hint]::after { content: attr(number)!important; }
+
 /* vim: set fdm=marker sw=4 ts=4 et: */
